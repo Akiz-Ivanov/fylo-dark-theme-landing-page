@@ -34,6 +34,7 @@
   html {
     font-family: var(--font-open-sans);
     font-size: 14px;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -63,11 +64,15 @@
   h2 {
     @apply text-xl;
   }
+
+  footer a {
+    @apply text-white/70 font-medium hover:text-white transition-colors font-raleway;
+  }
 }
 
 @layer utilities {
   .call-to-action {
-    @apply bg-linear-to-r from-teal-200 to-cyan-500 rounded-full p-3.5 font-bold font-raleway hover:from-[#8cdae4] hover:to-[#8cdae4] transition-colors;
+    @apply bg-linear-to-r from-teal-200 to-cyan-500 rounded-full h-14 font-bold font-raleway hover:from-[#8cdae4] hover:to-[#8cdae4] transition-colors inline-flex justify-center items-center;
   }
 
   .features-group {
@@ -77,4 +82,5 @@
   .features-group img {
     @apply mb-6;
   }
+
 }

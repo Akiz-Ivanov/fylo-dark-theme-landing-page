@@ -12,14 +12,13 @@ const CallToAction = () => {
     if (isEmailInvalid) {
       return;
     }
-    console.log(email);
     setEmail("");
   };
 
   return (
     <section
       id="early-access"
-      className="bg-navy-800 rounded-xl shadow-xl p-8 md:p-12 flex flex-col gap-6 text-center absolute -translate-y-1/2 -translate-x-1/2 left-1/2 w-[90%] max-w-3xl"
+      className="bg-navy-850 rounded-xl shadow-xl p-8 md:p-12 flex flex-col gap-6 text-center absolute -translate-y-1/2 -translate-x-1/2 left-1/2 w-[90%] max-w-3xl"
     >
       <h2 className="sm:text-2xl">Get early access today</h2>
       <p>

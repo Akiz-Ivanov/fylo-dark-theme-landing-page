@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/fylo-dark-theme-landing-page/",
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),

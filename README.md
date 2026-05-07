@@ -1,75 +1,64 @@
-# React + TypeScript + Vite
+# Frontend Mentor - Fylo dark theme landing page solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [AI Collaboration](#ai-collaboration)
+- [Author](#author)
 
-## React Compiler
+## Overview
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### The challenge
 
-Note: This will impact Vite dev & build performances.
+Users should be able to:
 
-## Expanding the ESLint configuration
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Screenshots
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+#### Desktop
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+![Desktop screenshot](./screenshots/desktop-screenshot.png)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+#### Mobile
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+![Mobile screenshot](./screenshots/mobile-screenshot.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Links
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Solution URL: [https://github.com/Akiz-Ivanov/fylo-dark-theme-landing-page](https://github.com/Akiz-Ivanov/fylo-dark-theme-landing-page)
+- Live Site URL: [https://akiz-ivanov.github.io/fylo-dark-theme-landing-page/](https://akiz-ivanov.github.io/fylo-dark-theme-landing-page/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Vite](https://vitejs.dev/) - Build tool
+- [Tailwind CSS 4.0](https://tailwindcss.com/) - For styles
+- [TypeScript](https://www.typescriptlang.org/)
+
+### AI Collaboration
+
+- **Tool used:** Claude (Anthropic)
+- **How:** Used throughout the project as a coding partner — discussing component structure, debugging layout issues (curvy SVG background, CallToAction positioning), responsive breakpoint decisions, and accessibility improvements
+- **What worked well:** Talking through layout approaches before implementing, catching semantic HTML issues, quick lookups for Tailwind syntax
+- **What didn't:** Some layout suggestions needed adjusting once seen in the browser — eyeballing always wins over guessing
+
+## Author
+
+- **Frontend Mentor** - [@Akiz97](https://www.frontendmentor.io/profile/Akiz97)
+- **GitHub** - [@Akiz-Ivanov](https://github.com/Akiz-Ivanov)

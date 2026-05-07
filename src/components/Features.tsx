@@ -5,7 +5,10 @@ import anyFile from "../assets/images/icon-any-file.svg";
 
 const Features = () => {
   return (
-    <section className="flex flex-col text-center justify-center items-center gap-22 text-balance">
+    <section
+      id="features"
+      className="flex flex-col text-center justify-center items-center gap-22 md:gap-30 text-balance md:grid md:grid-cols-2 max-w-5xl"
+    >
       <div className="features-group">
         <img src={accessAnywhere} alt="" />
         <h2>Access your files, anywhere</h2>

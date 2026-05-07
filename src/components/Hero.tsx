@@ -4,19 +4,21 @@ import curvyDesktop from "../assets/images/bg-curvy-desktop.svg";
 
 const Hero = () => {
   return (
-    <section className="px-11 flex flex-col items-center justify-center text-center gap-5 relative pb-32">
-      <img src={illustrationIntro} alt="" />
-      <h1 className="text-2xl leading-normal">
-        All your files in one secure location, accessible anywhere.
-      </h1>
-      <p className="mb-4">
-        Fylo stores all your most important files in one secure location. Access
-        them wherever you need, share and collaborate with friends family, and
-        co-workers.
-      </p>
-      <a href="#early-access" className="call-to-action w-4/5">
-        Get Started
-      </a>
+    <section className="px-11 relative pb-32 flex flex-col items-center justify-center">
+      <div className="max-w-2xl flex flex-col items-center justify-center text-center gap-5 md:gap-10">
+        <img src={illustrationIntro} alt="" />
+        <h1 className="text-24-32 md:text-[34px] leading-relaxed">
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p className="mb-4 md:text-lg max-w-[55ch]">
+          Fylo stores all your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends
+          family, and co-workers.
+        </p>
+        <a href="#early-access" className="call-to-action w-4/5 max-w-65">
+          Get Started
+        </a>
+      </div>
 
       {/* Background and Curvy Line */}
       <div className="bg-navy-900 absolute bottom-0 left-0 h-74 sm:h-44 lg:h-0 w-full -z-10">

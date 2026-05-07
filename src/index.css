@@ -13,6 +13,10 @@
   /* Typography */
   --font-raleway: var(--font-raleway);
   --font-open-sans: var(--font-open-sans);
+
+  --breakpoint-xs: 480px;
+
+  --text-24-32: clamp(1.5rem, 1.0229rem + 2.0356vw, 2rem);
 }
 
 :root {
@@ -72,7 +76,7 @@
 
 @layer utilities {
   .call-to-action {
-    @apply bg-linear-to-r from-teal-200 to-cyan-500 rounded-full h-14 font-bold font-raleway hover:from-[#8cdae4] hover:to-[#8cdae4] transition-colors inline-flex justify-center items-center;
+    @apply bg-linear-to-r from-teal-200 to-cyan-500 rounded-full h-14 font-bold font-raleway hover:from-[#8cdae4] hover:to-[#8cdae4] transition-colors inline-flex justify-center items-center cursor-pointer;
   }
 
   .features-group {

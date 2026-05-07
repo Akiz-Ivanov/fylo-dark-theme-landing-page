@@ -13,13 +13,17 @@ const App = () => {
       <main className="flex flex-col">
         <Hero />
         <div className="bg-navy-900 px-10 flex flex-col items-center gap-32 pb-84">
-          <Features />
-          <Productive />
-          <Testimonials />
+          <div className="w-full max-w-7xl flex flex-col items-center gap-32">
+            <Features />
+            <Productive />
+            <Testimonials />
+          </div>
         </div>
         <div className="-mb-32 relative z-10 bg-navy-950">
-          <CallToAction />
-          <Footer />
+          <div className="w-full max-w-360 mx-auto">
+            <CallToAction />
+            <Footer />
+          </div>
         </div>
       </main>
     </>

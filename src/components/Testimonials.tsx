@@ -6,7 +6,7 @@ import quotesIcon from "../assets/images/bg-quotes.png";
 
 const Testimonials = () => {
   return (
-    <section className="flex flex-col px-4 gap-8 relative">
+    <section className="flex flex-col px-4 gap-8 relative md:grid md:grid-cols-3">
       <img src={quotesIcon} alt="" className="size-6 absolute -top-5 left-5" />
       <Testimonial
         imgSrc={profile1}
